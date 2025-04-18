@@ -7,8 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node routers/posts.js",
-    "watch": "node --watch routers/posts.js",
+    "start": "node app.js",
+    "watch": "node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
