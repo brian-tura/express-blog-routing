@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const posts = require('../postsList.js');
+
 
 router.get('/', (req, res) => {
-    res.send('Lista dei post');
+    res.send(posts);
 });
 
 router.get('/:id', (req, res) => {
-    res.send(`Dettagli del post ${req.params.id}`);
+    res.send(posts[req.params.id - 1]);
 });
 
 router.post('/', (req, res) => {
